@@ -1,0 +1,238 @@
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Alumni+Sans+Pinstripe:ital@0;1&family=Inconsolata:wght@200..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Saira:ital,wght@0,100..900;1,100..900&display=swap");
+
+body {
+  margin: 0;
+  height: 100%;
+  background: url(./assets/gym.jpg) fixed center no-repeat;
+  background-size: cover;
+  font-family: "Inconsolata", monospace;
+}
+
+/* Container for the main content */
+.container {
+  border: 1px solid rgba(255, 51, 0, 0.226);
+  border-radius: 16px;
+  width: 80%;
+  max-width: 1100px;
+  height: auto;
+  margin: 10% auto;
+  background: rgba(0, 0, 0, 0.575);
+  backdrop-filter: blur(10px);
+  display: flex;
+  flex-wrap: wrap;
+  overflow: hidden;
+}
+
+.container img {
+  height: 100%;
+  width: 50%;
+  object-fit: cover;
+  border-radius: 14px;
+  border: 1px solid rgba(255, 51, 0, 0.219);
+}
+
+.container #name {
+  font-size: 2rem;
+  font-family: "Inconsolata", monospace;
+  color: rgb(255, 255, 255);
+  margin: 20px;
+  font-weight: bold;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.container #para {
+  font-size: 1.2rem;
+  font-family: "Alumni Sans Pinstripe", sans-serif;
+  font-weight: 400;
+  width: 95%;
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.219);
+  backdrop-filter: blur(10px);
+  opacity: 0.8;
+  border-radius: 6px;
+  color: white;
+  margin: 20px;
+}
+
+/* Login Section */
+.login-section {
+  padding: 2rem;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Username Field Styling */
+.username {
+  color: white;
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  font-family: "Inconsolata", monospace;
+}
+
+#username {
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  width: 100%;
+  margin-bottom: 1.5rem;
+  outline: none;
+  background: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  backdrop-filter: blur(10px);
+}
+
+.emailAddress,
+.password {
+  color: white;
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+#emailAddress,
+#password {
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  width: 100%;
+  margin-bottom: 1.5rem;
+  outline: none;
+}
+
+#signUp {
+  width: 100%;
+  padding: 10px;
+  font-size: 22px;
+  font-family: "Inconsolata";
+  cursor: pointer;
+  background-color: rgba(255, 0, 0, 0.8);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease-in-out;
+  margin-top: 10px;
+}
+
+#signUp:hover {
+  background-color: rgba(255, 102, 0, 0.8);
+}
+
+#signUp:active {
+  background-color: rgba(155, 47, 5, 0.753);
+  color: white;
+}
+
+#login {
+  width: 100%;
+  padding: 10px;
+  font-size: 22px;
+  font-family: "Inconsolata";
+  cursor: pointer;
+  background-color: rgba(255, 0, 0, 0.8);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+#login:hover {
+  background-color: rgba(255, 102, 0, 0.8);
+}
+
+#signUp:active {
+  background-color: rgba(155, 47, 5, 0.753);
+  color: white;
+}
+
+/* Responsive Styles */
+@media (max-width: 1200px) {
+  .container {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .container img {
+    width: 100%;
+    height: 400px;
+  }
+
+  .login-section {
+    width: 100%;
+    padding: 1.5rem;
+  }
+  .username {
+    font-size: 1rem;
+  }
+
+  #username {
+    font-size: 0.9rem;
+    width: 90%;
+  }
+
+  #emailAddress,
+  #password {
+    width: 90%;
+  }
+}
+
+@media (max-width: 768px) {
+  nav {
+    width: 95%;
+  }
+
+  .container {
+    margin: 20% auto;
+  }
+
+  .login-section {
+    padding: 1rem;
+  }
+
+  .username {
+    font-size: 0.9rem;
+  }
+
+  #username {
+    font-size: 0.85rem;
+    padding: 8px;
+  }
+
+  #login {
+    font-size: 20px;
+    padding: 8px;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    margin: 30% auto;
+  }
+
+  .container #name {
+    font-size: 1.5rem;
+  }
+
+  .username {
+    font-size: 0.8rem;
+  }
+
+  #username {
+    font-size: 0.8rem;
+    padding: 6px;
+  }
+
+  #emailAddress,
+  #password {
+    font-size: 0.9rem;
+    width: 100%;
+  }
+
+  #login {
+    font-size: 18px;
+  }
+}

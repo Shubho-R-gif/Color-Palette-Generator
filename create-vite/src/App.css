@@ -1,0 +1,221 @@
+/* General styles for desktop */
+@import url("https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap");
+
+html,
+body {
+  margin: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.container {
+  min-height: 971px;
+  width: 100%;
+  background-color: rgb(15, 14, 43);
+}
+
+.headerSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: linear-gradient(90deg, #0c1b8ad6, #500b9eae, #0e360d);
+  min-height: 300px;
+}
+
+h1 {
+  margin-top: 100px;
+  color: white;
+  font-size: 3rem;
+  font-family: "Inria Sans", sans-serif;
+  font-weight: 300;
+  user-select: none;
+}
+
+#searchBar {
+  width: 36%;
+  line-height: 20px;
+  border: none;
+  border-radius: 8px;
+  font-size: 20px;
+  padding: 10px;
+  outline: none;
+  color: rgba(14, 15, 15, 0.677);
+}
+
+#searchBar:focus {
+  filter: drop-shadow(0 0 5px orange);
+}
+
+span {
+  position: absolute;
+  z-index: 1;
+  font-size: 1.5rem;
+  color: rgb(246, 246, 246);
+  margin-left: 50px;
+  margin-top: 10px;
+  user-select: none;
+}
+
+.colorSection {
+  min-height: 665px;
+}
+
+.box {
+  margin-top: 60px;
+  margin-left: 55px;
+  width: 300px;
+  min-height: 120px;
+  display: inline-block;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.335);
+  border-radius: 6px;
+  padding: 10px;
+  background-color: rgba(254, 254, 254, 0.815);
+}
+
+#color1 {
+  height: 80px;
+  border-radius: 8px;
+  background-color: rgba(59, 11, 87, 0.895);
+}
+
+#colorId {
+  color: black;
+  font-family: "Inria Sans", sans-serif;
+  font-weight: 500;
+  margin: 0;
+  margin-top: 4px;
+  margin-left: 6px;
+  background-color: rgba(47, 46, 46, 0.086);
+  min-width: 285px;
+  padding: 2px;
+}
+
+#colorId i {
+  color: rgba(0, 0, 0, 0.312);
+  margin-left: 155px;
+  cursor: pointer;
+}
+
+#colorId i:active {
+  transform: scale(0.9);
+}
+
+/* Responsive styles for 475px */
+@media (max-width: 425px) {
+  h1 {
+    font-size: 2.5rem;
+    margin-top: 80px;
+  }
+
+  #searchBar {
+    width: 70%;
+    font-size: 18px;
+  }
+
+  .box {
+    width: 250px;
+    margin-left: 72px;
+  }
+
+  #colorId {
+    font-size: 14px;
+  }
+}
+@media (max-width: 375px) {
+  h1 {
+    font-size: 2rem;
+    margin-top: 60px;
+  }
+
+  #searchBar {
+    width: 80%;
+    font-size: 16px;
+    padding: 8px;
+  }
+
+  span {
+    font-size: 1.2rem;
+    margin-left: 10px;
+    min-width: 300px;
+  }
+
+  .box {
+    width: 324px;
+    margin-left: 10px;
+  }
+
+  #colorId {
+    font-size: 18px;
+    margin-left: 12px;
+    min-width: 315px;
+  }
+
+  #colorId i {
+    margin-left: 100px;
+  }
+}
+
+/* Responsive styles for 360px */
+@media (max-width: 360px) {
+  h1 {
+    font-size: 2rem;
+    margin-top: 60px;
+  }
+
+  #searchBar {
+    width: 80%;
+    font-size: 16px;
+    padding: 8px;
+  }
+
+  span {
+    font-size: 1.2rem;
+    margin-left: 20px;
+  }
+
+  .box {
+    width: 220px;
+    margin-left: 54px;
+  }
+
+  #colorId {
+    font-size: 12px;
+  }
+
+  #colorId i {
+    margin-left: 100px;
+  }
+}
+
+/* Responsive styles for 320px */
+@media (max-width: 320px) {
+  h1 {
+    font-size: 1.8rem;
+    margin-top: 50px;
+  }
+
+  #searchBar {
+    width: 90%;
+    font-size: 14px;
+    padding: 6px;
+  }
+
+  span {
+    font-size: 1rem;
+    margin-left: 10px;
+  }
+
+  .box {
+    width: 290px;
+    margin-left: 5px;
+  }
+
+  #colorId {
+    font-size: 18px;
+    margin-left: 1px;
+  }
+
+  #colorId i {
+    margin-left: 80px;
+  }
+}
